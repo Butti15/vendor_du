@@ -2,6 +2,9 @@
 PRODUCT_PACKAGES += \
     DU-Fonts \
     Turbo \
+    FMRadio \
+    SocialWall \
+    SoundRecorder \
     WallpaperPicker
 
 # Accents
