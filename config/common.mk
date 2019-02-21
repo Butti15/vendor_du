@@ -59,6 +59,15 @@ PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
 
+#Default Launcher
+PRODUCT_PACKAGES += \
+    Lawnchair
+
+# Lawnchair
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/du/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+
 # Weather client
 PRODUCT_COPY_FILES += \
     vendor/du/prebuilt/common/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
